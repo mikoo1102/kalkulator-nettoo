@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Netto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kalkulator Netto</h1>
+    <div class="calculator">
+        <input type="number" id="brutto" placeholder="Kwota brutto" />
+        <div class="buttons">
+            <button onclick="calculate(true)">Poniżej 26 lat</button>
+            <button onclick="calculate(false)">26 lat i więcej</button>
+        </div>
+        <div id="result">Wpisz kwotę brutto i wybierz grupę wiekową</div>
+    </div>
+    <details>
+        <summary>Aktualne stawki</summary>
+        <pre id="ratesDisplay"></pre>
+    </details>
+    <script src="script.js"></script>
+</body>
+</html>
